@@ -1,13 +1,11 @@
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="src/styles/global.css">
 </head>
 <body>
     <header>
@@ -22,7 +20,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
         </nav>
     </header>
     <h1>About me</h1>
-    <hr>
+   
     <p>My name is Andres, I'm 19 years old and I am currently studying software enginieering at Cenfotec. <br> Currently I work at DataGrove as a student developer.</p>
     <h2>Why software enginieering?</h2>
     <p>Because of the intellectual challenge it creates for me.</p>
