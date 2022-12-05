@@ -65,10 +65,13 @@ header li{
     margin: 20px;
 }
 header li a {
-    color: black;
+    color: rgb(208, 205, 205);
     text-decoration: none;
 }
+
 #profilepic{
     width: 200px;
 	float: right;
+
 }
+
