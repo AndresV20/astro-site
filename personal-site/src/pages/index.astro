@@ -2,36 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
-<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudfare.com/ajax/libs/tailwindcss/1.5.1/tailwind.min.CSS"></script>
 <Layout title="Welcome to Astro.">
+	<header>
+		<nav class="bg-indigo">
+			<div class="container mx-auto">
+				<div class="sm:flex justify-center">
+				   <a href="../src/pages/index.astro" class="text-white text-3xl font-bold ">Home</a>
+				</div>
+		   </div>
+		</nav>
+	</header>
     <main>
-        <div class="homeCont">
-            <table>
-                <thead>
-                    <th><h1 id="homeH1">Home</h1></th>
-                    <th><img src="../assets/home.png" alt="home icon" id="homeIcon"></th>
-                </thead>
 
-            </table>
-            <h2>Welcome to my personal website, my name is Andres and <br> I'm a goal oriented software developer.</h2>
-            <h2>Fun facts about me:
-            </h2>
-            <ul>
-                <li>I can speak three languages</li>
-                <li>I lived in Canada for four years</li>
-                <li>I like to play videogames</li>
-            </ul>
-            <div id="profilepic">
-                <img src="../images/Picture Andres.jpg" alt="Image of Andres" width="300px">
-            </div>
-            <footer>
-                <div>
-                    <h2>Motivational quote</h2>
-                    <p>“The secret of getting ahead is getting started.” —Mark Twain</p>
-                </div>
-            </footer>
-
-        </div>  
     </main>
 </Layout>
 
