@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./style.css"> probably need to link the input css to be able to use 
-    tailwind-->
+    <link rel="stylesheet" href="../dist/output.css">
     <title>About</title>
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header class="shadow-2xl">
+        <nav class="list-none shadow-2xl">
+            <ul class="bg-red-600 shadow-current flex p-5 space-x-5">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./social.html">Social</a></li>
@@ -24,19 +23,19 @@
     <div class="aboutCont">
         <table>
             <thead>
-                <th><h1>About me</h1></th>
+                <th><h1 class="text-5xl m-4 font mono">About me</h1></th>
                 <th><img src="./assets/about.png" alt="about icon"></th>
             </thead>
         </table>
         
         
-        <p>My name is Andres Villalobos Cabrallo.Currently <br> I work at DataGrove as a student developer and I'm studying at Cenfotec finnishing my first year of school</p>
-        <h2>Why software enginieering?</h2>
-        <p>Because of the intellectual challenge it creates for me.</p>
+        <p class="font-mono m-4 p-4">My name is Andres Villalobos Cabrallo. <br> Currently I work at DataGrove as a student developer and I'm studying at Cenfotec finishing my first year of school</p>
+        <h2 class="text-2xl font-mono m-4">Why software enginieering?</h2>
+        <p class="font-mono m-4 p-4">Because of the intellectual challenge it creates for me.</p>
 
         <div class="cv">
             <ul id="cvItem">
-                <li><a href="../assets/Resume Andres Villalobos Carballo.pdf" download="cvAndres.pdf" id="doc">Download my C.V.</a></li>
+                <li class="hover:bg-green-700 w-20 ml-80 bg-green-500"><a href="../assets/Resume Andres Villalobos Carballo.pdf" download="cvAndres.pdf" id="doc">Download my C.V.</a></li>
             </ul>
         </div>
     </div>
