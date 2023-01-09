@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title={"home"}>
+    <div class="socialCont">
+        <table>
+            <thead>
+                <th>
+                    <h1 id="socialH1" class="text-5xl m-4 font-mono">Social</h1>
+                </th>
+                <th>
+                    <img src="../assets/social.png" alt="social icon" />
+                </th>
+            </thead>
+        </table>
+        <p class="font-mono m-4 p-4">
+            If you want to check out some of the projects I've worked on or
+            learn more about me, take a look at my socials:
+        </p>
+        <ul
+            id="socials"
+            class="font-mono m-4 list-none flex p-4 space-x-5 text-white"
+        >
+            <li class="bg-black hover:bg-green-200">
+                <a
+                    href="https://github.com/AndresV20"
+                    target="_blank"
+                    class="socialBtn">GitHub</a
+                >
+            </li>
+            <li class="bg-black hover:bg-green-200">
+                <a
+                    href="https://www.linkedin.com/in/andres-villalobos-b49b07238/"
+                    target="_blank"
+                    class="socialBtn">Linkedin</a
+                >
+            </li>
+        </ul>
+    </div>
+</Layout>

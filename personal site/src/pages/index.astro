@@ -1,59 +1,50 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/output.css">
-    <title>Personal Site</title>
-</head>
-<body>
-    <header class="shadow-xl">
-        <nav class="list-none shadow-2xl">
-            <ul class="bg-red-600 shadow-current flex p-5 space-x-5">
-            <li class="hover:text-white"><a href="./index.html">Home</a></li>
-            <li class="hover:text-white"><a href="./about.html">About</a></li>
-            <li class="hover:text-white"><a href="./social.html">Social</a></li>
-            <li class="hover:text-white"><a href="./contact.html">Contact</a></li>
-            <li class="hover:text-white"><a href="./experience.html">Experience</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="homeCont">
-            <table>
-                <thead>
-                    <th><h1 id="homeH1" class="text-5xl m-4 font-mono">Home</h1></th>
-                    <th><img src="../assets/home.png" alt="home icon" id="homeIcon"></th>
-                </thead>
-
-            </table>
-            <h2 class="text-2xl font-mono m-4">Welcome to my personal website, my name is Andres and <br> I'm a goal oriented software developer.</h2>
-            <h2 class="text-2xl font-mono m-4">Fun facts about me: </h2>
-            <ul class="font-mono m-4 list-disc p-4">
-                <li>I can speak three languages</li>
-                <li>I lived in Canada for four years</li>
-                <li>I like to play videogames</li>
-            </ul>
-            <div id="profilepic">
-                <img src="../assets/Picture Andres.jpg" alt="Image of Andres" width="300px" class="float-right p-7 m-7  top-0 ">
+<Layout title={"home"}>
+    <div class="homeCont">
+        <table>
+            <thead>
+                <th
+                    ><h1 id="homeH1" class="text-5xl m-4 font-mono">Home</h1>
+                </th>
+                <th
+                    ><img
+                        src="../assets/home.png"
+                        alt="home icon"
+                        id="homeIcon"
+                    />
+                </th>
+            </thead>
+        </table>
+        <h2 class="text-2xl font-mono m-4">
+            Welcome to my personal website, my name is Andres and <br />
+            I'm a goal oriented software developer.
+        </h2>
+        <h2 class="text-2xl font-mono m-4">Fun facts about me:</h2>
+        <ul class="font-mono m-4 list-disc p-4">
+            <li>I can speak three languages</li>
+            <li>I lived in Canada for four years</li>
+            <li>I like to play videogames</li>
+        </ul>
+        <div id="profilepic">
+            <img
+                src="../assets/Picture Andres.jpg"
+                alt="Image of Andres"
+                width="300px"
+                class="float-right p-7 m-7 top-0"
+            />
+        </div>
+        <footer>
+            <div>
+                <h2 class="text-2xl font-mono p-2 m-4">Motivational quote</h2>
+                <p class="font-mono m-4 p-4">
+                    “The secret of getting ahead is getting started.” —Mark
+                    Twain
+                </p>
             </div>
-            <footer>
-                <div>
-                    <h2 class="text-2xl font-mono p-2 m-4">Motivational quote</h2>
-                    <p class="font-mono m-4 p-4">“The secret of getting ahead is getting started.” —Mark Twain</p>
-                </div>
-            </footer>
-
-        </div>  
-    </main>
-
-</body>
-</html>
-
-
+        </footer>
+    </div>
+</Layout>

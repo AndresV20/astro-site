@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title={"home"}>
+    <div class="homeCont">
+        <table>
+            <thead>
+                <th>
+                    <h1 class="text-5xl m-4 font-mono">Contacts</h1>
+                </th>
+                <th
+                    ><img
+                        src="../assets/contact.png"
+                        alt="contact icon"
+                        id="contactIcon"
+                    />
+                </th>
+            </thead>
+        </table>
+        <h2 class="text-2xl font-mono m-4">
+            You can reach me by contacting my:
+        </h2>
+        <ul class="font-mono m-4 list-disc p-4">
+            <li>Corporate Email: andres.villalobos@datagrove.com</li>
+            <li>Personal Email: andres@emailing.com</li>
+            <li>Phone number: 613-240-6842</li>
+        </ul>
+    </div>
+</Layout>

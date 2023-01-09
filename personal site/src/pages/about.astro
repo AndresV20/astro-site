@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title={"home"}>
+    <div class="aboutCont">
+        <table>
+            <thead>
+                <th>
+                    <h1 class="text-5xl m-4 font mono">About me</h1>
+                </th>
+                <th><img src="./assets/about.png" alt="about icon" /></th>
+            </thead>
+        </table>
+
+        <p class="font-mono m-4 p-4">
+            My name is Andres Villalobos Cabrallo. <br /> Currently I work at DataGrove
+            as a student developer and I'm studying at Cenfotec finishing my first
+            year of school
+        </p>
+        <h2 class="text-2xl font-mono m-4">Why software enginieering?</h2>
+        <p class="font-mono m-4 p-4">
+            Because of the intellectual challenge it creates for me.
+        </p>
+
+        <div class="cv">
+            <ul id="cvItem">
+                <li class="hover:bg-green-700 w-20 ml-80 bg-green-500">
+                    <a
+                        href="../assets/Resume Andres Villalobos Carballo.pdf"
+                        download="cvAndres.pdf"
+                        id="doc">Download my C.V.</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</Layout>
